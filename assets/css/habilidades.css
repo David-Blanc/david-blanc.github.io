@@ -1,0 +1,168 @@
+.habilidades{
+    background-color: var(--back-color2);
+    color: var(--font-color);
+    padding: 50px 20px;
+    min-height: calc(100vh - 67.6px);
+}
+.habilidades__contenedor{
+    max-width: 1100px;
+    margin: auto;
+}
+.habilidades h2{
+    font-size: 48px;
+    font-family: var(--second-font);
+    text-align: center;
+    padding: 20px 0;
+}
+.habilidades__contenedor2{
+    display: flex;
+}
+.habilidades__contenedor2 > div{
+    width: 50%;
+    padding: 0 20px;
+}
+.habilidades__contenedor2 h3{
+    font-size: 28px;
+    font-family: var(--second-font);
+    margin-bottom: 25px;
+}
+.habilidades__profesionales{
+    margin-left: 45px;
+}
+.habilidades__profesionales h3, .habilidades__profesionales > div > div{
+    text-align: end;
+}
+.habilidades .habilidad > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.habilidades .habilidad .barra-habilidad{
+    height: 8px;
+    background-color: var(--back-color);
+    position: relative;
+    margin-bottom: 30px;
+}
+.habilidades .habilidad .progreso{
+    background-color: var(--accent-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.habilidades .habilidad .barra-habilidad span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: var(--accent-color);
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.habilidades .habilidad .hab-0{
+    width: 0%;
+    animation: 2s hab-0 forwards;
+}
+@keyframes hab-0{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.habilidades .habilidad .hab-1{
+    width: 0%;
+    animation: 2s hab-1 forwards;
+}
+@keyframes hab-1{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.habilidades .habilidad .hab-2{
+    width: 0%;
+    animation: 2s hab-2 forwards;
+}
+@keyframes hab-2{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+.habilidades .habilidad .hab-3{
+    width: 0%;
+    animation: 2s hab-3 forwards;
+}
+@keyframes hab-3{
+    0%{width: 0%;}
+    100%{width: 10%;}
+}
+
+.habilidades .habilidad .hab-4{
+    width: 0%;
+    animation: 2s hab-4 forwards;
+}
+@keyframes hab-4{
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+.habilidades .habilidad .hab-5{
+    width: 0%;
+    animation: 2s hab-5 forwards;
+}
+@keyframes hab-5{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.habilidades .habilidad .hab-6{
+    width: 0%;
+    animation: 2s hab-6 forwards;
+}
+@keyframes hab-6{
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+.habilidades .habilidad .hab-7{
+    width: 0%;
+    animation: 2s hab-7 forwards;
+}
+@keyframes hab-7{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.habilidades .habilidad .hab-8{
+    width: 0%;
+    animation: 2s hab-8 forwards;
+}
+@keyframes hab-8{
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+.habilidades .habilidad .hab-9{
+    width: 0%;
+    animation: 2s hab-9 forwards;
+}
+@keyframes hab-9{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+@media screen and (max-width: 760px){
+    .habilidades__contenedor2{
+        display: block;
+    }
+    .habilidades__contenedor2 > div{
+        width: 100%;
+    }
+    .habilidades__profesionales {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+}

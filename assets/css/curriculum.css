@@ -1,0 +1,166 @@
+.curriculum {
+    background-color: var(--back-color);
+    color: var(--font-color);
+    padding: 50px 20px;
+    min-height: calc(100vh - 67.6px);
+    overflow: hidden;
+}
+
+.curriculum__contenedor {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.curriculum h2 {
+    font-size: 48px;
+    font-family: var(--second-font);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.curriculum .fila {
+    display: flex;
+    justify-content: space-between;
+}
+
+.curriculum .fila .col {
+    width: 49%;
+    padding: 0 20px;
+}
+
+.curriculum .fila .col h3 {
+    font-size: 28px;
+    font-family: var(--second-font);
+    margin-bottom: 25px;
+}
+
+.curriculum .fila .derecha h3 {
+    text-align: end;
+}
+
+.curriculum .fila .item {
+    padding: 25px;
+    margin-bottom: 50px;
+    background-color: var(--back-color2);
+    position: relative;
+}
+
+.izq-mov {
+    animation: 1.5s izq-mov forwards;
+}
+
+@keyframes izq-mov {
+    0% {
+        right: calc(100vw/2);
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+.der-mov {
+    animation: 1.5s der-mov forwards;
+}
+
+@keyframes der-mov {
+    0% {
+        right: calc(-100vw/2);
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+.curriculum .fila .item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item .casa {
+    color: var(--accent-color);
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.curriculum .fila .item .fecha {
+    display: block;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item p {
+    line-height: 24px;
+}
+
+.curriculum .fila .izq {
+    border-right: 2px solid var(--accent-color);
+    margin-right: 20px;
+}
+
+.curriculum .fila .der {
+    border-left: 2px solid var(--accent-color);
+    margin-left: 20px;
+}
+
+.curriculum .fila .item .conectori {
+    height: 2px;
+    background-color: var(--accent-color);
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conectori .circuloi {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.curriculum .fila .item .conectord {
+    height: 2px;
+    background-color: var(--accent-color);
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conectord .circulod {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+.curriculum__contenedor .fila .col+.derecha {
+    text-align: end;
+}
+
+@media screen and (max-width: 760px) {
+    .curriculum .fila {
+        display: block;
+    }
+
+    .curriculum .fila .col {
+        width: 90%;
+    }
+
+    .curriculum .fila .derecha {
+        margin-left: 10%;
+    }
+}

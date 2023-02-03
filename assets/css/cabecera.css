@@ -1,0 +1,149 @@
+.cabecera {
+    background: var(--back-color3);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: -67.6px;
+    z-index: 20;
+    animation: mostrar .3s forwards;
+}
+
+@keyframes mostrar {
+    from {
+        top: -67.6px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+.cabecera__contenedor {
+    max-width: 1100px;
+    height: 67.6px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.cabecera__logo a {
+    display: flex;
+}
+
+.cabecera__logo svg{
+    height: 32px;
+    fill: var(--accent-color);
+}
+
+.cabecera__langselect {
+    position: relative;
+    margin-left: auto;
+}
+
+.langselect__selected {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 25px;
+}
+
+.langselect__options {
+    position: absolute;
+    left: 0;
+    background-color: var(--back-color3);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 51.8px;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path .3s;
+}
+
+.options--show {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: clip-path .3s;
+}
+
+.langselect__options li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-bottom: 1px solid var(--font-color);
+    transition: .3s;
+}
+
+.langselect__options li:hover {
+    background-color: var(--accent-color);
+}
+
+.cabecera__langselect img {
+    height: 36px;
+    border-radius: 10px;
+}
+
+.nav__contenedor {
+    display: flex;
+    list-style: none;
+}
+
+.nav__contenedor li a {
+    text-align: none;
+    color: var(--back-color);
+    margin: 0 0 0 25px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.nav__contenedor li a:hover {
+    color: var(--accent-color);
+}
+
+.cabecera__boton {
+    background-color: var(--accent-color);
+    color: var(--font-color);
+    padding: 8.4px 11px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .cabecera__nav {
+        display: block;
+        position: absolute;
+        top: 67.6px;
+        right: -180px;
+        background-color: var(--back-color3);
+        width: 180px;
+        transition: right .3s;
+    }
+
+    .cabecera__boton {
+        display: block;
+    }
+
+    .mostrar {
+        right: 0;
+    }
+
+    .cabecera__nav ul {
+        display: block !important;
+    }
+
+    .cabecera__nav ul li {
+        border-bottom: 1px solid var(--font-color);
+        padding: 10px 0;
+    }
+
+    .nav__contenedor li a {
+        text-align: none;
+        color: var(--back-color);
+        margin: 0 15px;
+        padding: 3px;
+        transition: .5s;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,136 @@
+.sobremi{
+    background-color: var(--back-color);
+    color: var(--font-color);
+    padding: 50px 20px;
+    min-height: calc(100vh - 67.6px);
+}
+.sobremi__contenedor{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: var(--second-font);
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi__contenedor p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.sobremi__presentacion--enfasis{
+    color: var(--accent-color);
+    font-weight: bold;
+}
+.sobremi__contenedor2{
+    display: flex;
+}
+.sobremi__contenedor2 .sobremi__personales, .sobremi__contenedor2 .sobremi__intereses{
+    width: 50%;
+}
+.sobremi__contenedor2 div h3{
+    font-size: 28px;
+    font-family: var(--second-font);
+    margin-bottom: 25px;
+}
+.sobremi__personales ul{
+    list-style: none;
+}
+.sobremi__personales ul li{
+    margin: 12px 0;
+}
+.sobremi__personales ul li strong{
+    display: inline-block;
+    color: var(--accent-color);
+    width: 130px;
+}
+.sobremi__personales ul li span{
+    background-color: var(--accent-color);
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.sobremi__intereses h3{
+    text-align: end;
+}
+.intereses__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.intereses__contenedor .intereses{
+    width: 100px;
+    height: 100px;
+    background-color: var(--back-color2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.intereses__contenedor .intereses:hover{
+    background-color: var(--accent-color);
+}
+.intereses__contenedor .intereses i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sobremi__botoncv{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--font-color);
+    width: 171.99px;
+    display: block;
+    margin: 45px auto 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: var(--font-color);
+    position: relative;
+    white-space: nowrap;
+}
+.sobremi__botoncv .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--accent-color2);
+
+    overflow: hidden;
+    transition: 1s;
+}
+
+.overlay__palabra{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 171.99px;
+    height: 100%;
+    background-color: var(--accent-color2);
+    color: var(--back-color2);
+    z-index: 10;
+
+}
+.sobremi__botoncv:hover .overlay{
+    width: 100%;
+}
+
+@media screen and (max-width: 760px){
+    .sobremi__contenedor{
+        padding: 0px;
+    }
+    .sobremi__contenedor2{
+        display: block;
+    }
+    .sobremi__contenedor2 .sobremi__personales, .sobremi__contenedor2 .sobremi__intereses{
+        width: 100%;
+    }
+    .sobremi__intereses{
+        margin-top: 25px;
+    }
+}

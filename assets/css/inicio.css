@@ -1,0 +1,312 @@
+.inicio {
+    height: 100vh;
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+}
+
+.inicio--fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, var(--back-color-with-opacity), var(--back-color2)), url(/assets/img/background.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    z-index: -1;
+    animation: mostrar--fondo .3s forwards;
+}
+
+@keyframes mostrar--fondo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.inicio__contenedor {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.inicio__contenedor--animacion {
+    margin: calc(-100vh/2) auto 0 auto;
+    animation: contenedor--animacion .9s 3.5s forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes contenedor--animacion {
+    from {
+        margin: calc(-100vh/2) auto 0 auto;
+    }
+    to {
+        margin: 0 auto 0 auto;
+    }
+}
+
+.inicio__img {
+    margin-top: 40px;
+    border: 10px solid var(--accent-color);
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.inicio__img--animacion {
+    opacity: 0;
+    animation: img--animacion .9s 3.8s forwards;
+}
+@keyframes img--animacion {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.inicio__nombre {
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: var(--second-font);
+}
+
+.david-blanc {
+    stroke: var(--font-color);
+    height: 40px;
+    margin: 40px 0 20px 0;
+}
+
+
+.inicio__profesion {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+/* Animación DAVID BLANC */
+
+.david-blanc .D-avid {
+    animation: .4s D-avid forwards;
+    stroke-dasharray: 165;
+    stroke-dashoffset: 165;
+}
+
+@keyframes D-avid {
+    from {
+        stroke-dashoffset: 165;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.david-blanc .d-A-vid__cuerpo {
+    animation: .4s d-A-vid__cuerpo forwards;
+    animation-delay: .3s;
+    stroke-dasharray: 134;
+    stroke-dashoffset: 134;
+}
+
+@keyframes d-A-vid__cuerpo {
+    from {
+        stroke-dashoffset: 134;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.david-blanc .d-A-vid__guion {
+    animation: .1s d-A-vid__guion forwards;
+    animation-delay: .6s;
+    stroke-dasharray: 44;
+    stroke-dashoffset: 44;
+}
+
+@keyframes d-A-vid__guion {
+    from {
+        stroke-dashoffset: 44;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.david-blanc .da-V-id {
+    animation: .4s da-V-id forwards;
+    animation-delay: .8s;
+    stroke-dasharray: 129;
+    stroke-dashoffset: 129;
+}
+
+@keyframes da-V-id {
+    from {
+        stroke-dashoffset: 129;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.david-blanc .dav-I-d {
+    animation: .2s dav-I-d forwards;
+    animation-delay: 1.1s;
+    stroke-dasharray: 63;
+    stroke-dashoffset: 63;
+}
+
+@keyframes dav-I-d {
+    from {
+        stroke-dashoffset: 63;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.david-blanc .davi-D {
+    animation: .4s davi-D forwards;
+    animation-delay: 1.3s;
+    stroke-dasharray: 164;
+    stroke-dashoffset: 164;
+}
+
+@keyframes davi-D {
+    from {
+        stroke-dashoffset: 164;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.david-blanc .B-lanc__guion {
+    animation: .1s B-lanc__guion forwards;
+    animation-delay: 1.6s;
+    stroke-dasharray: 35;
+    stroke-dashoffset: 35;
+}
+
+@keyframes B-lanc__guion {
+    from {
+        stroke-dashoffset: 35;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.david-blanc .B-lanc__cuerpo {
+    animation: .4s B-lanc__cuerpo forwards;
+    animation-delay: 1.7s;
+    stroke-dasharray: 143;
+    stroke-dashoffset: 143;
+}
+
+@keyframes B-lanc__cuerpo {
+    from {
+        stroke-dashoffset: 143;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.david-blanc .b-L-anc {
+    animation: .4s b-L-anc forwards;
+    animation-delay: 2s;
+    stroke-dasharray: 95;
+    stroke-dashoffset: 95;
+}
+
+@keyframes b-L-anc {
+    from {
+        stroke-dashoffset: 95;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.david-blanc .bl-A-nc__cuerpo {
+    animation: .4s bl-A-nc__cuerpo forwards;
+    animation-delay: 2.3s;
+    stroke-dasharray: 134;
+    stroke-dashoffset: 134;
+}
+
+@keyframes bl-A-nc__cuerpo {
+    from {
+        stroke-dashoffset: 134;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.david-blanc .bl-A-nc__guion {
+    animation: .1s bl-A-nc__guion forwards;
+    animation-delay: 2.6s;
+    stroke-dasharray: 44;
+    stroke-dashoffset: 44;
+}
+
+@keyframes bl-A-nc__guion {
+    from {
+        stroke-dashoffset: 44;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.david-blanc .bla-N-c {
+    animation: .5s bla-N-c forwards;
+    animation-delay: 2.8s;
+    stroke-dasharray: 184;
+    stroke-dashoffset: 184;
+}
+
+@keyframes bla-N-c {
+    from {
+        stroke-dashoffset: 184;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.david-blanc .blan-C {
+    animation: .4s blan-C forwards;
+    animation-delay: 3.2s;
+    stroke-dasharray: 115;
+    stroke-dashoffset: 115;
+}
+
+@keyframes blan-C {
+    from {
+        stroke-dashoffset: 115;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}

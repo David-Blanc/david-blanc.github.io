@@ -1,0 +1,69 @@
+.contacto {
+    background-color: var(--back-color);
+    color: var(--font-color);
+    padding: 50px 0;
+    height: calc(100vh - 67.6px - 171px);
+}
+
+.contacto__contenedor {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto__titulo {
+    font-size: 48px;
+    font-family: var(--second-font);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto__links {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: calc(0.05 * 100vw);
+    padding: 45px 20px;
+}
+
+.contacto__link {
+    font-size: 18px;
+    color: var(--font-color);
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    background-color: var(--back-color2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    transition: .3s;
+}
+
+.contacto__link i {
+    color: var(--accent-color);
+    font-size: 28px;
+    transition: color .3s;
+}
+
+.contacto__link:hover i {
+    color: var(--accent-color2);
+}
+
+.contacto__link:hover {
+    margin-top: -10px;
+}
+
+@media screen and (max-width: 760px) {
+    .contacto .fila {
+        display: block;
+    }
+
+    .contacto .fila .col {
+        width: 100%;
+    }
+}

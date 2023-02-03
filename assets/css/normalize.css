@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+:root {
+    --accent-color: #45C2C9;
+    --accent-color-with-opacity: #45C2C9cc;
+    --accent-color2: #F46145;
+    --font-color: #45474A;
+    --back-color2: #FFFFFF;
+    --back-color: #F5F5F5;
+    --back-color-with-opacity: #ffffffb3;
+    --back-color3: #457B9D;
+    --second-font: 'Kalam', cursive;
+    ;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--back-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+}
+
+.hide {
+    display: none;
+  }
+
+.activo {
+    color: var(--accent-color) !important;
+}
