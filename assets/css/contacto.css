@@ -2,7 +2,7 @@
     background-color: var(--back-color);
     color: var(--font-color);
     padding: 50px 0;
-    height: calc(100vh - 67.6px - 171px);
+    min-height: calc(100vh - 67.6px - 171px);
 }
 
 .contacto__contenedor {
@@ -65,5 +65,17 @@
 
     .contacto .fila .col {
         width: 100%;
+    }
+}
+
+@media (max-height: 760px) and (orientation: portrait) {
+    .contacto__links {
+        padding: 0px 20px;
+    }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .contacto__links {
+        padding: 0px 20px;
     }
 }

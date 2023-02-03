@@ -134,3 +134,9 @@
         margin-top: 25px;
     }
 }
+
+@media screen and (max-width: 370px){
+    .intereses__contenedor {
+        gap: 10px;
+    }
+}

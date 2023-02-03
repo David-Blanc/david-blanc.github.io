@@ -1,5 +1,9 @@
 (function () {
 /*-----------------CABECERA-----------------*/
+const customSelect = document.querySelector(".cabecera__langselect");
+const selectedOption = customSelect.querySelector(".langselect__selected");
+const options = customSelect.querySelector(".langselect__options");
+
 const nav = document.querySelector("[data-cabecera-nav]");
 const botonNav = document.querySelector("[data-cabecera-boton]");
 const navLinks = document.querySelectorAll('[data-cabecera-nav] a');
@@ -20,6 +24,9 @@ botonNav.addEventListener("click", () => {
     } else {
         nav.classList.add("mostrar");
         menuVisible = true;
+        if (options.classList.contains("options--show")) {
+            options.classList.remove("options--show");
+        }
     }
 });
 
@@ -58,13 +65,13 @@ function activar() {
 document.addEventListener('scroll', activar);
 
 /*cambio de idioma*/
-const customSelect = document.querySelector(".cabecera__langselect");
-const selectedOption = customSelect.querySelector(".langselect__selected");
-const options = customSelect.querySelector(".langselect__options");
-
 selectedOption.addEventListener("click", () => {
     //   options.style.display = options.style.display === "block" ? "none" : "block";
     options.classList.toggle("options--show");
+    if (menuVisible) {
+        nav.classList.remove("mostrar");
+        menuVisible = false;
+    }
 });
 
 options.addEventListener("click", async (event) => {
