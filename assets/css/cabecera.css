@@ -34,6 +34,7 @@
 .cabecera__logo svg{
     height: 32px;
     fill: var(--accent-color);
+    stroke: none;
 }
 
 .cabecera__langselect {
@@ -55,7 +56,8 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    top: 51.8px;
+    top: 50.8px;
+    border-top: 2px solid var(--back-color3);;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: clip-path .3s;
     z-index: 99;
