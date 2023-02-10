@@ -116,8 +116,8 @@ elementsIzq.forEach(element => {
 
 /*Animación sección SKILLS*/
 let habilidades = document.getElementsByClassName("progreso");
-const observerTecs = new Array(10);
-for (let i = 0; i < 10; i++) {
+const observerTecs = new Array(12);
+for (let i = 0; i < 12; i++) {
   observerTecs[i] = new IntersectionObserver(addClassOnIntersect(`hab-${i}`));
   observerTecs[i].observe(habilidades[i]);
 }

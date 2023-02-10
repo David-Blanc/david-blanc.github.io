@@ -47,7 +47,7 @@
     color: var(--accent-color);
     width: 130px;
 }
-.sobremi__personales ul li span{
+.sobremi__datos--destacado{
     background-color: var(--accent-color);
     padding: 3px;
     font-weight: bold;
