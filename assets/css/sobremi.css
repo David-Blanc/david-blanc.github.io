@@ -39,13 +39,13 @@
 .sobremi__personales ul{
     list-style: none;
 }
-.sobremi__personales ul li{
+.personales__linea{
+    display: flex;
     margin: 12px 0;
 }
-.sobremi__personales ul li strong{
-    display: inline-block;
+.personales__linea strong{
     color: var(--accent-color);
-    width: 130px;
+    min-width: 130px;
 }
 .sobremi__datos--destacado{
     background-color: var(--accent-color);
